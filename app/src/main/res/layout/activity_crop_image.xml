@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crop_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.mvc.codebase.activity.CropImageActivity">
+
+
+    <TextView
+        android:id="@+id/txt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dim_5dp"
+        android:text="@string/strResizeDesc"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_16sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/frame_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_desc">
+
+        <ProgressBar
+            android:id="@+id/pb_cropAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/dim_10dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/buttonStyleWrapContent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:onClick="onClickEvent"
+            android:text="@string/lblCancel" />
+
+        <ImageView
+            android:id="@+id/iv_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white"
+            android:contentDescription="@string/strCropImageDesc"
+            android:onClick="onClickEvent"
+            android:padding="@dimen/dim_5dp"
+            android:src="@mipmap/ic_rotate" />
+
+        <Button
+            android:id="@+id/btn_done"
+            style="@style/buttonStyleWrapContent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:onClick="onClickEvent"
+            android:text="@string/lblDone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_zoomInst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:contentDescription="@string/strIndicateToUser"
+        android:src="@mipmap/ic_zoom"
+        android:visibility="gone" />
+</RelativeLayout>

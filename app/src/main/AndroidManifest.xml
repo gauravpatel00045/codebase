@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mvc.codebase">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_codebase_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:label="@string/app_name"></activity>
+
+        <service android:name=".firebaseNotification.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- firebase messaging service -->
+        <service android:name=".firebaseNotification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- gcm listener service -->
+        <!--
+         <service
+             android:name=".firebaseNotification.PushNotificationService"
+             android:exported="false">
+             <intent-filter>
+                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+             </intent-filter>
+         </service>
+
+         <receiver
+             android:name="com.google.android.gms.gcm.GcmReceiver"
+             android:exported="true"
+             android:permission="com.google.android.c2dm.permission.SEND">
+             <intent-filter>
+                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                 <category android:name="com.example.mvc.codebase" />
+             </intent-filter>
+         </receiver>
+        -->
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider368734926844989"
+            android:exported="true" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="1ebaea327d4a5aee47c80a5e8074e31fa39c6e52" />
+
+        <activity android:name=".activity.CropImageActivity"></activity>
+    </application>
+
+</manifest>

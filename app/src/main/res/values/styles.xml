@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Alert Style -->
+    <style name="txtAlertStyle" parent="AppTheme">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/font_16sp</item>
+    </style>
+
+    <!--custom dialog style-->
+    <style name="DialogTheme" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:color">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--custom dialog style-->
+    <style name="DatePickerDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:color">@color/blue</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--login EditText style-->
+    <style name="EditTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/font_18sp</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:maxLines">@integer/maximum_lines</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="colorControlHighlight">@color/blue</item>
+    </style>
+
+    <!-- Custom dialog Header Style, e.g Forgot Password, Country, City, Location dialog -->
+    <style name="txtCustomDialogHeaderStyle" parent="AppTheme">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/bg_dialog_header</item>
+    </style>
+
+    <!--  No records Style -->
+    <style name="txtNoRecordsStyle" parent="AppTheme">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--child style of editText for registration-->
+    <style name="edtRegStyle" parent="EditTextStyle">
+        <item name="android:padding">@dimen/dim_10dp</item>
+        <item name="android:background">@drawable/bg_edt_register</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <!--style of divider in registration form-->
+    <style name="dividerRegStyle" parent="AppTheme">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginTop">9dp</item>
+        <item name="android:background">#BEBEBE</item>
+
+    </style>
+
+    <!--Registration Terms and Condition -->
+    <style name="txtRegStyleTerms" parent="AppTheme">
+        <item name="android:layout_marginLeft">@dimen/dim_5dp</item>
+        <item name="android:layout_marginRight">@dimen/dim_5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textColor">#929292</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="buttonStyle">
+        <item name="android:background">@drawable/light_violet_selector</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/font_16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="buttonStyleMatchParent" parent="buttonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dim_40dp</item>
+    </style>
+
+    <style name="buttonStyleWrapContent" parent="buttonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

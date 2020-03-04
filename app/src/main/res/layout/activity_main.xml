@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="@dimen/dim_15dp"
+    tools:context="com.example.mvc.codebase.activity.MainActivity">
+    <!--xml component id format-->
+    <!--
+    e.g. edt_registrationFirstName
+     1. xml component object type e.g. edt
+     2. activity name e.g _Main
+     3. identity name e.g. FirstName
+    -->
+    <ImageView
+        android:id="@+id/iv_abbacusLogo"
+        android:layout_width="match_parent"
+        android:contentDescription="@string/app_name"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_splash_codebase" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_10dp"
+        android:gravity="center"
+        android:text="@string/strCompanyName"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_22sp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/buttonStyleMatchParent"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClickEvent"
+        android:text="@string/lblLogout" />
+</RelativeLayout>

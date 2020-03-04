@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_white_rectangle"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_10dp">
+
+        <TextView
+            android:id="@+id/txtAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dim_5dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnYes"
+                style="@style/buttonStyleMatchParent"
+                android:layout_marginLeft="@dimen/dim_5dp"
+                android:layout_marginStart="@dimen/dim_5dp"
+                android:onClick="onClickEvent" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

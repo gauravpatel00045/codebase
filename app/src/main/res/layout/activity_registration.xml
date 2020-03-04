@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.mvc.codebase.activity.RegistrationActivity">
+
+    <!--xml component id format-->
+    <!--
+    e.g. edt_registrationFirstName
+     1. xml component object type e.g. edt
+     2. activity name e.g _registration
+     3. identity name e.g. FirstName
+    -->
+    <TextView
+        android:id="@+id/txt_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_15dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/font_22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        style="@style/dividerRegStyle"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txt_registration"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_registration"
+        android:layout_below="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_15dp">
+
+            <ImageView
+                android:id="@+id/iv_userDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_male_pref_pressed_grey"
+                android:contentDescription="@string/strUserDp"
+                android:onClick="onClickEvent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputText_registrationFirstName"
+                style="@style/TextInputLayoutStyle"
+                app:counterMaxLength="50">
+
+                <!--loginUser email edit text-->
+                <EditText
+                    android:id="@+id/edt_registrationFirstName"
+                    style="@style/EditTextStyle"
+                    android:layout_marginBottom="@dimen/dim_10dp"
+                    android:inputType="textCapWords"
+                    android:maxLength="@integer/txtLength" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputText_registrationLastName"
+                style="@style/TextInputLayoutStyle"
+                app:counterMaxLength="@integer/txtLength">
+
+                <!--loginUser email edit text-->
+                <EditText
+                    android:id="@+id/edt_registrationLastName"
+                    style="@style/EditTextStyle"
+                    android:layout_marginBottom="@dimen/dim_10dp"
+                    android:inputType="textCapWords"
+                    android:maxLength="@integer/txtLength" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputText_registrationEmail"
+                style="@style/TextInputLayoutStyle"
+                app:counterMaxLength="@integer/txtLength">
+
+                <EditText
+                    android:id="@+id/edt_registrationEmail"
+                    style="@style/EditTextStyle"
+                    android:layout_marginBottom="@dimen/dim_10dp"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="@integer/txtLength" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputText_registrationPhone"
+                style="@style/TextInputLayoutStyle"
+                app:counterMaxLength="@integer/phoneNoLength">
+
+                <EditText
+                    android:id="@+id/edt_registrationPhone"
+                    style="@style/EditTextStyle"
+                    android:layout_marginBottom="@dimen/dim_10dp"
+                    android:inputType="phone"
+                    android:maxLength="@integer/phoneNoLength" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_RegistrationBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/font_18sp" />
+
+
+            <TextView
+                android:id="@+id/txt_registrationDateFormat"
+                style="@style/edtRegStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/dim_5dp"
+                android:layout_marginStart="@dimen/dim_5dp"
+                android:drawableEnd="@drawable/ic_calender"
+                android:drawableRight="@drawable/ic_calender"
+                android:onClick="onClickEvent"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colorHint" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputText_registrationPassword"
+                style="@style/TextInputLayoutStyle"
+                app:counterMaxLength="@integer/txtPwdLength">
+
+                <!--loginUser email edit text-->
+                <EditText
+                    android:id="@+id/edt_registrationPassword"
+                    style="@style/EditTextStyle"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textPassword"
+                    android:maxLength="@integer/txtPwdLength" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputText_registrationConfirmPassword"
+                style="@style/TextInputLayoutStyle"
+                app:counterMaxLength="@integer/txtPwdLength">
+
+                <!--loginUser email edit text-->
+                <EditText
+                    android:id="@+id/edt_registrationConfirmPassword"
+                    style="@style/EditTextStyle"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dim_10dp"
+                    android:inputType="textPassword"
+                    android:maxLength="@integer/txtPwdLength" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_RegistrationCountry"
+                style="@style/edtRegStyle"
+                android:layout_margin="@dimen/dim_10dp"
+                android:clickable="true"
+                android:hint="@string/lblSelectCountry"
+                android:onClick="onClickEvent"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/lin_termsCond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim_10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_registrationTermConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:gravity="center_vertical"
+                    android:onClick="onClickEvent" />
+
+                <TextView
+                    android:id="@+id/txtTermsConditionsReg"
+                    style="@style/txtRegStyleTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="@string/lblTermAndConditions" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Registration Button -->
+    <Button
+        android:id="@+id/btn_registration"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dim_10dp"
+        android:onClick="onClickEvent" />
+</RelativeLayout>

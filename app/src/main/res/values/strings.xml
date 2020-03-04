@@ -1,0 +1,155 @@
+<resources>
+    <!--Application Name-->
+    <string name="app_name">CodeBase</string>
+
+    <!-- string name format-->
+
+    <!-- xml component label name format
+    e.g. lblLogin - Log In
+          1. lbl - identity name to differentiate the string
+          2. Login - nickname to understand the string value
+     -->
+
+    <!--error message name format
+    e.g. errorMsgEmailAddress - Please enter email address
+         1. errorMsg - identity name to differentiate the string
+         2. EmailAddress - nickname to understand the string value
+    -->
+
+    <!--Other string name format
+    e.g strVersion - Version
+        1. str - identity name to differentiate the string
+        2. Version - nickname to understand the string value
+        -->
+
+    <!-- string name format-->
+
+
+    <string name="lblLogin">Log In</string> <!--Resource Id : 2131230887-->
+    <string name="lblLogout">Log Out</string>
+    <string name="lblLoading">Loading…</string>
+    <string name="lblLoginWithGooglePlus">LogIn with Google+</string>
+    <string name="lblLoginWithFb">Log In with Facebook</string>
+    <string name="lblLoginWithTwitter">Log In with Twitter</string>
+
+    <!--Login Validation Error Messages-->
+    <string name="errorMsgEmailAddress">Please enter email address</string>
+    <string name="errorMsgPwd">Please enter password</string>
+    <string name="errorMsgValidEmailAddress">Please enter valid email address</string>
+    <string name="errorMsgValidPwd">Password length must be at least six characters</string>
+    <string name="lblLoginSuccess">Login successfully</string>
+    <string name="lblLogoutSuccess">Logout successfully</string>
+
+    <!--Registration Screen Messages-->
+
+    <string name="lblRegistration">Registration</string>
+    <string name="lblFirstName">First name</string>
+    <string name="lblLastName">Last name</string>
+    <string name="lblAddress">Address</string>
+    <string name="lblEmail">Email address </string>
+    <string name="lblPhoneNo">Phone number</string>
+    <string name="lblGender">Gender</string>
+    <string name="lblMale">Male</string>
+    <string name="lblFemale">Female</string>
+    <string name="lblDOB">Birthday</string>
+    <string name="lblDateFormat">dd/mm/yyyy</string>
+    <string name="lblPwd">Password</string>
+    <string name="lblConfPwd">Confirm Password</string>
+    <string name="lblRegister">Register</string>
+    <string name="lblNoCountryFound">No country found</string>
+    <string name="lblSelectCountry">Select country</string>
+    <string name="lblSelectDate">Select date</string>
+    <string name="lblTermAndConditions">Agree to #terms and condition# and #privacy policy#.></string>
+    <string name="lblOr">OR</string>
+    <string name="lblDone">Done</string>
+    <string name="lblDate">Date</string>
+    <string name="lblTermsAndConditions">Agree to #terms and condition# and #privacy policy#.</string>
+    <string name="lblSearch">Search…</string>
+    <string name="strShareStaticBitmapWithFb">shareStaticBitmapWithFb success</string>
+    <string name="strShareDynamicBitmapWithFb">shareDynamicBitmapWithFb(bitmap) success</string>
+    <string name="strShareDynamicBitmapAndCaptionWithFb">shareDynamicBitmapWithFb(bitmap,caption) success</string>
+    <string name="strShareSuccess">share success</string>
+    <string name="strShareFail">share fail</string>
+    <string name="strVersion">Ver. </string>
+    <string name="strResizeDesc">Please resize your photo to fit the frame</string>
+    <string name="strTakePhoto">Take photo</string>
+    <string name="strOpenGallery">Open Gallery</string>
+    <string name="strCancel">Cancel</string>
+    <string name="strDialogTitle">Add photo</string>
+    <string name="strSelectFile">select file</string>
+    <string name="strRequestBase64"> request base64</string>
+    <string name="strPermissionRequired">Permission access required to use service. </string>
+    <string name="strShouldPermit">You should accept the permission</string>
+    <string name="errorMsgPlayServiceUnAvailable">play service is not available</string>
+
+    <!--Registration Validation Error Messages-->
+    <string name="errorMsgFirstName">Please enter first name</string>
+    <string name="errorMsgValidFirstName">First name should be alphabet: \n
+        capital letters [A-Z],\n
+        small letters [a-Z] or \n
+        sign [-,_] </string>
+    <string name="errorMsgLastName">Please enter last name</string>
+    <string name="errorMsgValidLastName">Last name should be alphaNumeric: \n
+        capital letters [A-Z],\n
+        small letters [a-Z], \n
+        numbers [0,9] or \n
+        sign [-,_] </string>
+    <string name="errorMsgPhoneNo">Please enter phone number</string>
+    <string name="errorMsgValidPhoneNo">Please enter valid phone number</string>
+    <string name="errorMsgAddress">Please enter address</string>
+    <string name="errorMsgPwdAlphaNumericWithSpecialCharacter">Password should contain alphanumeric value  and special characters</string>
+    <string name="errorMsgGender">Please select gender</string>
+    <string name="errorMsgDOB">Please select birthDate </string>
+    <string name="errorMsgConfirmPwd">Please enter confirm password</string>
+    <string name="errorMsgSamePwd">Password and confirm password must be same</string>
+    <string name="errorMsgSelectCountry">Please select country</string>
+    <string name="errorMsgTermsAndConditions">Please agree with terms and conditions</string>
+    <string name="errorMsgToDo">stub is generated but developer or programmer need to add code as required.</string>
+    <string name="errorMsgLoginFailed">Login Failed! please try again</string>
+
+    <!--API Calling Error Messages-->
+    <string name="errorMsgInternetConnUnavailable">Internet connection is unavailable</string>
+    <string name="errorMsgInternetSlow">Internet connection is too slow</string>
+    <string name="errorMsgRequestError">There appears to be a problem with the request. Please try again</string>
+    <string name="errorMsgShortMaintananceBreak">A short maintenance break will occur. Please check back shortly.</string>
+    <string name="strCompanyName"> Abbacus Technologies </string>
+
+    <!--Dialog Messages-->
+    <string name="lblOk">OK</string>
+    <string name="lblCancel">Cancel</string>
+    <string name="lblYes">Yes</string>
+    <string name="lblNo">No</string>
+    <string name="lblRetry">Retry</string>
+    <string name="lblPleaseWait">Please wait…</string>
+    <string name="lblUpdate">Update</string>
+    <string name="lblDelete">Delete</string>
+    <string name="lblDismiss">Dismiss</string>
+
+
+    <!--Facebook profile image Url-->
+    <string name="strFbProfileImageUrl">https://graph.facebook.com/%s/picture?type=large</string>
+
+    <!--Social media credentials-->
+    <!--Google plus testing credentials-->
+    <string name="google_email_id">KimAlexis1471@gmail.com</string>
+    <string name="google_email_pwd">Abbacus007</string>
+    <!--Facebook testing credentials-->
+    <string name="facebook_email_id">tonyscott0078@gmail.com</string>
+    <string name="facebook_email_pwd">abbacus007</string>
+    <!--Twitter testing credentials-->
+    <string name="twitter_email_id">tomasoalbinoni0189@gmail.com</string>
+    <string name="twitter_email_pwd">abbacus007</string>
+    <!--Fabric account credentials-->
+    <string name="fabric_user_id">tomasoalbinoni0189@gmail.com</string>
+    <string name="fabric_user_pwd">abbacus007</string>
+
+    <string name="google_default_web_client_id">221528613337-kq7url4hie5hm3n6g1ot5vbs8lalnpck.apps.googleusercontent.com</string>
+    <string name="google_client_secret_key">dJTACfIAXBjkZEBaVuFBIMf5</string>
+    <string name="facebook_app_id">368734926844989</string>
+    <string name="strCropImageDesc">Image that to be modified and resize</string>
+    <string name="strIndicateToUser">Indicate to user that how to crop or zoom image using ic_zoom image</string>
+    <string name="strUserDp">user desktop picture</string>
+    <string name="strData">data</string>
+
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.mvc.codebase.activity.SplashActivity">
+    <!--xml component id format-->
+    <!--
+    e.g. edt_registrationFirstName
+     1. xml component object type e.g. edt
+     2. activity name e.g _registration
+     3. identity name e.g. FirstName
+    -->
+    <ImageView
+        android:id="@+id/iv_splashLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_splash_codebase" />
+
+    <LinearLayout
+        android:id="@+id/lin_splashUnderConstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_splashUnderConstruction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/underconstruction" />
+
+        <TextView
+            android:id="@+id/tv_splashMaintenance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lin_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_5dp"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="@dimen/dim_50dp"
+                android:layout_height="@dimen/dim_50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblPleaseWait"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strVersion"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/txt_appVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

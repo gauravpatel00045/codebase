@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Constant values-->
+    <integer name="requestTimeOut">30000</integer>
+
+    <!--min and max text length-->
+    <integer name="phoneNoLength">10</integer>
+    <integer name="txtLength">50</integer>
+    <integer name="txtAddressLength">200</integer>
+    <integer name="txtEmailLength">100</integer>
+    <integer name="txtPwdLength">20</integer>
+    <integer name="maximum_lines">1</integer>
+</resources>
